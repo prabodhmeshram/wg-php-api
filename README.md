@@ -3,7 +3,9 @@ wg-php-api
 
 This is a  API Wrapper in PHP for the 
 
-popular website WunderGround http://www.wunderground.com.
+popular weather website's REST API
+
+WunderGround http://www.wunderground.com.
 
 Supports Json and XML response.
 
