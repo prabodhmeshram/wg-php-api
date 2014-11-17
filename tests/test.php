@@ -1,8 +1,13 @@
 <?php
 
-include "../api/WG.php";
+require "../api/WG.php";
+require "../config/config.php"; 
 
-$oWG = new WG("<YOUR-KEY-HERE>");
+if(trim($sAPI_KEY) == ''){
+	throw new Exception("API KEY NOT SET");
+}
+
+$oWG = new WG($sAPI_KEY);
 
 $oWG->setFeatures(array("forecast","geolookup"));
 // $oWG->setSettings(array());
@@ -11,4 +16,4 @@ $oWG->setResponseFormat("json"); // Can be XML
 
 $result = $oWG->processRequest();
 
-var_dump($result);
+var_dump($result); // Outputs your result
