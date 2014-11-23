@@ -1,7 +1,10 @@
 <?php
 
-/*
+/**
 * Wrapper Class for WunderGround API
+*
+* @author : Prabodh Meshram <prabodh.meshram7@gmail.com>
+* 2014-11-23 : 15:02 
 */
 class WG {
 
